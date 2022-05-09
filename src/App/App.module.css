@@ -1,0 +1,87 @@
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/cake.jpg");
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(20, 20, 20, 0.7);
+}
+
+.itemsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item {
+  width: 260px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.description {
+  margin-bottom: 12px;
+  padding: 0 10px;
+  text-align: center;
+  color: beige;
+  font-size: 18px;
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .container {
+    align-items: flex-end;
+    padding: 60px 0;
+  }
+
+  .itemsContainer {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .item {
+    width: 200px;
+  }
+
+  .item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding: 60px 0;
+  }
+
+  .item {
+    width: 320px;
+  }
+
+  .item:not(:last-child) {
+    margin-right: 100px;
+  }
+
+  .description {
+    margin-bottom: 16px;
+    padding: 0 20px;
+    font-size: 20px;
+  }
+}
