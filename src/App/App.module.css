@@ -12,8 +12,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   background-color: rgba(20, 20, 20, 0.7);
+}
+
+.title {
+  font-size: 40px;
+  line-height: 44px;
+  font-family: "Oleo Script Swash Caps", cursive;
+  color: #fcfc55;
+}
+
+.description {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 300;
+  /* font-family: "Oleo Script Swash Caps", cursive; */
+  color: beige;
 }
 
 .itemsContainer {
@@ -28,11 +44,11 @@
 }
 
 .item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
-.description {
-  margin-bottom: 12px;
+.purpose {
+  margin-bottom: 10px;
   padding: 0 10px;
   text-align: center;
   color: beige;
@@ -43,8 +59,18 @@
 
 @media (min-width: 768px) {
   .container {
-    align-items: flex-end;
+    align-items: center;
     padding: 60px 0;
+  }
+
+  .title {
+    font-size: 60px;
+    line-height: 66px;
+  }
+
+  .description {
+    margin-bottom: 80px;
+    font-size: 26px;
   }
 
   .itemsContainer {
@@ -61,7 +87,7 @@
     margin-bottom: 0;
   }
 
-  .description {
+  .purpose {
     font-size: 16px;
   }
 }
@@ -69,6 +95,16 @@
 @media (min-width: 1280px) {
   .container {
     padding: 60px 0;
+  }
+
+  .title {
+    font-size: 100px;
+    line-height: 110px;
+  }
+
+  .description {
+    margin-bottom: 100px;
+    font-size: 40px;
   }
 
   .item {
@@ -79,7 +115,7 @@
     margin-right: 100px;
   }
 
-  .description {
+  .purpose {
     margin-bottom: 16px;
     padding: 0 20px;
     font-size: 20px;
