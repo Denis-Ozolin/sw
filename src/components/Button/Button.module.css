@@ -1,35 +1,40 @@
 .link {
   display: block;
+  /* margin-top: auto; */
   padding: 10px 0;
-  width: 260px;
+  width: 100%;
   text-align: center;
   border: 2px solid #fcfc55;
   border-radius: 50px;
-  color: beige;
+  /* color: beige; */
   text-shadow: #e0e0e0 1px 1px 0;
   font-size: 20px;
   font-weight: 500;
+  background-color: #fcfc55;
+  color: #46271a;
   /* font-family: 'Oleo Script Swash Caps', cursive; */
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.link:hover,
-.link:focus {
-  background-color: #fcfc55;
-  color: #46271a;
-}
-
 @media (min-width: 768px) {
   .link {
-    width: 200px;
+    /* width: 200px; */
     padding: 14px 0;
     font-size: 16px;
+    background-color: inherit;
+    color: beige;
+  }
+
+  .link:hover,
+  .link:focus {
+    background-color: #fcfc55;
+    color: #46271a;
   }
 }
 
 @media (min-width: 1280px) {
   .link {
-    width: 320px;
+    /* width: 320px; */
     padding: 20px 0;
     font-size: 24px;
   }

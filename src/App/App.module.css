@@ -25,7 +25,7 @@
 }
 
 .description {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   font-size: 20px;
   font-weight: 300;
   /* font-family: "Oleo Script Swash Caps", cursive; */
@@ -45,6 +45,10 @@
 
 .item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.item:nth-child(2) {
+  margin-bottom: 40px;
 }
 
 .purpose {
@@ -87,6 +91,10 @@
     margin-bottom: 0;
   }
 
+  .item:last-child > .purpose {
+    margin-bottom: 33px;
+  }
+
   .purpose {
     font-size: 16px;
   }
@@ -113,6 +121,10 @@
 
   .item:not(:last-child) {
     margin-right: 100px;
+  }
+
+  .item:last-child > .purpose {
+    margin-bottom: 43px;
   }
 
   .purpose {
