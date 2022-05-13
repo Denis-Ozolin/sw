@@ -1,7 +1,7 @@
 import css from './HomePage.module.css';
 import Button from '../components/Button';
 
-function Home({links}) {
+function Home({ links }) {
   return (
     <div className={css.wrapper}>
         <div className={css.container}>

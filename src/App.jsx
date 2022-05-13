@@ -1,3 +1,6 @@
+import {useState, useEffect} from 'react'
+
+import LoadingPage from './components/LoadingPage';
 import HomePage from './pages';
 
 const links = [
@@ -21,9 +24,22 @@ const links = [
   },
 ];
 
-function App() {
+function App() { 
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    if (isLoading) return;
+    const timer = setTimeout(() => {
+      setIsLoading(!isLoading);
+    }, 1000);
+      
+      return () => clearTimeout(timer);
+    },[isLoading]);
+  
   return (
-    <HomePage links={links}/>
+    <>
+      {!isLoading ? <LoadingPage/>: <HomePage links={links}/>}
+    </>
   );
 }
 
