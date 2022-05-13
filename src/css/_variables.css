@@ -1,3 +1,7 @@
 :root {
-  --bgColor: tomato;
+  --transparentBgColor: rgba(20, 20, 20, 0.7);
+  --accentColor: #fcfc55;
+  --lightFontColor: #f5f5dc;
+  --darkFontColor: #46271a;
+  --bgImageName: "cake.jpg";
 }
